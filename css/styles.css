@@ -31,21 +31,6 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 @font-face {
   font-family: 'Inconsolata-Regular';
@@ -64,16 +49,12 @@ table {
 
 /* Custom CSS */
 .header {
-  font-family: 'Inconsolata-Regular';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 25px;
+  font: normal bold 1.5rem/1.5rem 'Inconsolata-Regular';
   letter-spacing: -0.08em;
   text-transform: uppercase;
   color: #333333;
-  margin-top: 20px;
-  margin-left: 24px;
+  margin-top: 1.25rem;
+  margin-left: 1.5rem;
 }
 
 .flex {
@@ -82,41 +63,42 @@ table {
 }
 
 .flex--margin {
-  margin-top: 64px;
-  margin-left: 24px;
+  margin-top: 4rem;
+  margin-left: 1.5rem;
 }
 
 .figure {
   text-align: center;
-  margin-left: 20px;
-  margin-right: 44px;
-  margin-bottom: 60px;
+  margin-left: 1.25rem;
+  margin-right: 2.75rem;
+  margin-bottom: 3.75rem;
 }
 
 .figure__scarecrow {
   width: 100%;
   height: auto;
-  max-width: 700px;
+  /* max-width: 700px; */
 }
 
 .info-section__h1 {
-  font: normal 48px/71px "Space-Mono-Bold";
+  font: normal 3rem/4.5rem "Space-Mono-Bold";
   letter-spacing: -0.035em;
   color: #333333;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
 .info-section__p {
-  font: normal normal 18px/27px "Space-Mono-Regular";
+  font: normal normal 1.125rem/1.75rem "Space-Mono-Regular";
   letter-spacing: -0.035em;
   color: #4F4F4F;
-  margin-bottom: 66px;
+  margin-bottom: 4.125rem;
 }
 
 .button {
-  font: normal 14px/21px "Space-Mono-Bold";
-  padding: 23px 43px;
+  font: normal 0.875rem/1.375rem "Space-Mono-Bold";
+  padding: 1.5rem 2.75rem;
   letter-spacing: -0.035em;
+  border: none;
 }
 
 .button--back-homepage {  
@@ -127,13 +109,13 @@ table {
 
 @media (min-width: 768px) {
   .header {
-    margin-top: 40px;
-    margin-left: 77px;
+    margin-top: 2.5rem;
+    margin-left: 5rem;
   }
   .figure__scarecrow {
     width: 100%;
     height: auto;
-    max-width: 600px;
+    max-width: 70%;
   }
 }
 
@@ -143,8 +125,8 @@ table {
     flex-direction: row;
   }
   .flex--margin {
-    margin-top: 200px;
-    margin-left: 77px;
+    margin-top: 12.5rem;
+    margin-left: 4.75rem;
   }
   .figure {
     text-align: center;
@@ -154,18 +136,18 @@ table {
     max-width: 1300px;
   }
   .info-section {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
   .info-section__h1 {
-    font-size: 52px;
-    line-height: 95px;
-    margin-bottom: 36px;
+    font-size: 3.25rem;
+    line-height: 6rem;
+    margin-bottom: 2.25rem;
   }
   .info-section__p {
-    font-size: 24px;
-    line-height: 36px;
-    margin-bottom: 64px;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -174,22 +156,18 @@ table {
     max-width: 800px;
   }
   .info-section__h1 {
-    font-size: 64px;
-    line-height: 95px;
-    margin-bottom: 36px;
+    font-size: 4rem;
+    line-height: 6rem;
+    margin-bottom: 2.25rem;
   }
   .info-section {
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
   }
 }
 
 @media (min-width: 1536px) {
-  /* .header {
-    font-size: 48px;
-  } */
   .flex {
     justify-content: center;
   }
 }
-
